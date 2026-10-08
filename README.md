@@ -1,4 +1,4 @@
-# 🌿 Plant Disease Detection using Deep Learning
+# 🌿 Plant Disease Detector (By Robin John)
 
 A deep learning project that detects plant type and disease from leaf images using PyTorch and a multi-task ResNet18 model, deployed with Streamlit. Designed as a portable, "plug-and-play" application running directly from a USB drive with zero configuration hassles and full protection against encoding issues and cache conflicts.
 
@@ -6,31 +6,31 @@ A deep learning project that detects plant type and disease from leaf images usi
 
 ## 🚀 Project Features
 
-* Classifies plant type 🌱[cite: 13]
-* Detects plant disease 🦠[cite: 13]
-* Built with PyTorch + ResNet18[cite: 13]
-* Web app using Streamlit[cite: 13]
-* Image preprocessing and augmentation[cite: 13]
+* Classifies plant type 🌱
+* Detects plant disease 🦠
+* Built with PyTorch + ResNet18
+* Web app using Streamlit
+* Image preprocessing and augmentation
 * **Portable USB Architecture:** Runs via an embedded Python environment (`python_embed`) without requiring prior installation on host computers.
-* **Robust Execution:** Automated batch script automation (`run.bat`) to clear old cache files and enforce UTF-8 encoding.
+* **Robust Execution:** Automated batch script automation (`Plant Disease Detector.exe`) to clear old cache files and enforce UTF-8 encoding.
 
 ---
 
 ## 🧠 Model Architecture
 
-* Backbone: ResNet18 (pretrained)[cite: 13]
-* Feature extraction layer: 512 → 256[cite: 13]
-* Two output heads:[cite: 13]
-  * Plant classification head 🌱[cite: 13]
-  * Disease classification head 🦠[cite: 13]
+* Backbone: ResNet18 (pretrained)
+* Feature extraction layer: 512 → 256
+* Two output heads:
+  * Plant classification head 🌱
+  * Disease classification head 🦠
 
 ---
 
 ## 📂 Dataset
 
-The dataset contains images of plant leaves categorized as:[cite: 13]
-* Apple, Tomato, Corn, Grape, etc.[cite: 13]
-* Each plant has different diseases + healthy class[cite: 13]
+The dataset contains images of plant leaves categorized as:
+* Apple, Tomato, Corn, Grape, etc.
+* Each plant has different diseases + healthy class
 
 ---
 
