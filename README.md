@@ -50,5 +50,6 @@ Plant-Disease-Detector/
 ├── training/
 │   └── train.py
 ├── Groq API Key.txt
-├── Plant Disease Detector.bat  # Plug & Play Launcher
-└── README.md
+├── Plant Disease Detector.bat
+├── Plant Disease Detector.exe  # Plug & Play Launcher
+└── README.txt
