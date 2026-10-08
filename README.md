@@ -1,63 +1,75 @@
-# 🌿 Plant Disease Detector (By Robin John)
 
-A deep learning project that detects plant type and disease from leaf images using PyTorch and a multi-task ResNet18 model, deployed with Streamlit. Designed as a portable, "plug-and-play" application running directly from a USB drive with zero configuration hassles and full protection against encoding issues and cache conflicts.
+# 🌿 Plant Disease Detection using Deep Learning
+
+A deep learning project that detects plant type and disease from leaf images using PyTorch and a multi-task ResNet18 model, deployed with Streamlit.
 
 ---
 
 ## 🚀 Project Features
-
-* Classifies plant type 🌱
-* Detects plant disease 🦠
-* Built with PyTorch + ResNet18
-* Web app using Streamlit
-* Image preprocessing and augmentation
-* **Portable USB Architecture:** Runs via an embedded Python environment (`python_embed`) without requiring prior installation on host computers.
-* **Robust Execution & Protection:** Automated batch and executable launcher to clear old cache files instantly and enforce forced UTF-8 encoding (`chcp 65001` & `PYTHONIOENCODING=utf-8`) to completely eliminate `Null Bytes` and environment errors.
+- Classifies plant type 🌱  
+- Detects plant disease 🦠  
+- Built with PyTorch + ResNet18  
+- Web app using Streamlit  
+- Image preprocessing and augmentation  
 
 ---
 
 ## 🧠 Model Architecture
-
-* Backbone: ResNet18 (pretrained)
-* Feature extraction layer: 512 → 256
-* Two output heads:
-  * Plant classification head 🌱
-  * Disease classification head 🦠
+- Backbone: ResNet18 (pretrained)
+- Feature extraction layer: 512 → 256
+- Two output heads:
+  - Plant classification head 🌱
+  - Disease classification head 🦠
 
 ---
 
 ## 📂 Dataset
-
 The dataset contains images of plant leaves categorized as:
-* Apple, Tomato, Corn, Grape, etc.
-* Each plant has different diseases + healthy class
+
+- Apple, Tomato, Corn, Grape, etc.
+- Each plant has different diseases + healthy class
 
 ---
 
 ## 📁 Project Structure
 
-```text
-Plant-Disease-Detector/
+```
+plant-disease-detection/
 │
 ├── app/
 │   └── planet_app.py
-├── Database/
+│
 ├── model/
 │   ├── planet_model.py
 │   └── model.pth
-├── python_embed/          # Embedded Portable Python
-├── scans_archive/
+│
 ├── training/
 │   └── train.py
-├── Groq API Key.txt
-├── Plant Disease Detector.bat
-├── Plant Disease Detector.exe  # Plug & Play Launcher
+│
+├── requirements.txt
+├── .gitignore
 └── README.md
+```
 
 ---
 
 ## 📥 How to Download & Install
+Go to the repository Releases section on GitHub.
 
-1. Go to the repository and click on the `Releases` section on the right side of the page.
-2. Download the ready-to-use portable package `Plant.Disease.Detector.zip` from the latest release assets..
-3. Extract the ZIP file directly onto your USB flash drive or local machine.
+Download the ready-to-use portable package Plant.Disease.Detector.zip from the latest release assets.
+
+Extract the ZIP file directly onto your USB flash drive or local machine.
+
+---
+
+## ⚙️ How to Run
+Plug in your USB drive or open the extracted project folder.
+
+Double-click the application launcher (Plant Disease Detector.exe or the batch file).
+
+The app will automatically clear old cache, verify the embedded Python environment, and launch the Streamlit web app in your default browser at http://localhost:8501.
+
+---
+
+## Developed with dedication by Robin John.
+---
