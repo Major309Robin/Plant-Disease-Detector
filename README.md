@@ -1,75 +1,59 @@
+# 🌿 Plant Disease Detection & Smart Diagnosis System
 
-# 🌿 Plant Disease Detection using Deep Learning
-
-A deep learning project that detects plant type and disease from leaf images using PyTorch and a multi-task ResNet18 model, deployed with Streamlit.
+A comprehensive deep learning and AI-powered project that detects plant types and diseases from leaf images using PyTorch and a multi-task ResNet18 model, deployed interactively with Streamlit. Featuring multi-language support, real-time weather & seasonal guides, SQLite scan archiving, and an AI Plant Doctor assistant.
 
 ---
 
-## 🚀 Project Features
-- Classifies plant type 🌱  
-- Detects plant disease 🦠  
-- Built with PyTorch + ResNet18  
-- Web app using Streamlit  
-- Image preprocessing and augmentation  
+## 🚀 Key Features & Capabilities
+
+* **Dual-Task Deep Learning Detection:** Accurately classifies plant species and detects specific diseases simultaneously using a custom ResNet18 backbone.
+* **Bilingual Interface (English & العربية):** Full support for English and Arabic languages with seamless layout and text adaptation.
+* **Smart Weather & Season Inspector:** Integrates live location/weather tracking via `wttr.in` and automated seasonal analysis to verify if the plant matches the current season.
+* **Plant Doctor AI Assistant (Groq API):** Interactive chatbot powered by Groq API (`openai/gpt-oss-20b`) that gives expert agricultural advice tailored to the scanned plant, weather, and diagnosis.
+* **SQLite Database & Archiving:** Automatically saves scans, high-resolution images (`scans_archive`), detailed text reports, and chat histories into a local SQLite database (`Database/plant_scans.db`).
+* **Analytics & Search Dashboard:** Filter past scans by status (Healthy/Diseased), search records by plant or disease name, export history as a CSV file for Excel, and view quick analytics/recent scans.
+* **Custom UI & Dark Mode:** Toggle between Dark and Light themes with custom CSS styling, upload helper guides, and report download/copy features[cite: 1].
 
 ---
 
 ## 🧠 Model Architecture
-- Backbone: ResNet18 (pretrained)
-- Feature extraction layer: 512 → 256
-- Two output heads:
-  - Plant classification head 🌱
-  - Disease classification head 🦠
+
+* **Backbone:** Pretrained ResNet18 model (with final classification layer adapted)[cite: 1].
+* **Feature Extraction Layer:** Fully connected layer mapping 512 features to 256 units[cite: 1].
+* **Dual Output Heads:**
+  * **Plant Classification Head 🌱** (handles 14 plant types)[cite: 1]
+  * **Disease Classification Head 🦠** (handles 21 disease/health classes)[cite: 1]
 
 ---
 
-## 📂 Dataset
-The dataset contains images of plant leaves categorized as:
+## 📂 Supported Categories
 
-- Apple, Tomato, Corn, Grape, etc.
-- Each plant has different diseases + healthy class
+* **Plants (14 types):** Apple, Blueberry, Cherry (including sour), Corn (maize), Grape, Orange, Peach, Pepper (bell), Potato, Raspberry, Soybean, Squash, Strawberry, and Tomato[cite: 1].
+* **Conditions & Diseases (21 classes):** Includes various blights, spots, rusts, mildews, viruses, and healthy classifications[cite: 1].
 
 ---
 
 ## 📁 Project Structure
 
-```
+```text
 plant-disease-detection/
 │
 ├── app/
-│   └── planet_app.py
+│   └── planet_app.py        # Streamlit web application & UI
 │
 ├── model/
-│   ├── planet_model.py
-│   └── model.pth
+│   ├── planet_model.py      # Model architecture definition
+│   └── model.pth            # Trained weights file
+│
+├── Database/                # SQLite database folder (auto-created)
+│   └── plant_scans.db
+│
+├── scans_archive/           # Saved scan images folder (auto-created)
 │
 ├── training/
-│   └── train.py
+│   └── train.py             # Model training script
 │
+├── Groq API Key.txt         # Saved Groq API key storage
 ├── requirements.txt
 ├── .gitignore
 └── README.md
-```
-
----
-
-## 📥 How to Download & Install
-Go to the repository Releases section on GitHub.
-
-Download the ready-to-use portable package Plant.Disease.Detector.zip from the latest release assets.
-
-Extract the ZIP file directly onto your USB flash drive or local machine.
-
----
-
-## ⚙️ How to Run
-Plug in your USB drive or open the extracted project folder.
-
-Double-click the application launcher (Plant Disease Detector.exe or the batch file).
-
-The app will automatically clear old cache, verify the embedded Python environment, and launch the Streamlit web app in your default browser at http://localhost:8501.
-
----
-
-## Developed with dedication by Robin John.
----
