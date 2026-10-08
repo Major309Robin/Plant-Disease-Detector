@@ -1,31 +1,39 @@
-The Groq key powers the AI ​​system for the Q&A program
+# 🌿 Plant Disease Detector (By Robin John)
 
+A portable, "plug-and-play" Plant Disease Detection application built with PyTorch and Streamlit, designed to run directly from a USB drive with zero configuration hassles, completely protected against encoding issues (`UTF-8`) and cache conflicts.
 
+## 🚀 Project Features
 
-Step-by-step guide to obtaining the key:
-Access the Groq platform:
+* **Plant Classification & Disease Detection:** Identifies plant types and detects leaf diseases accurately.
+* **Portable USB Architecture:** Runs on an embedded Python environment (`python_embed`) without requiring Python installation on the host machine.
+* **Web Interface:** Interactive and clean UI powered by Streamlit.
+* **Robust & Clean Startup:** Automated cache cleanup and forced UTF-8 encoding via custom batch scripts (`run.bat`) to eliminate `Null Bytes` and environment errors.
 
-Open your web browser and visit the official Groq Console website via this link:
-👉 console.groq.com
+## 📁 Project Structure
 
-Log in or create a new account:
+```text
+Plant-Disease-Detector/
+│
+├── app/
+│   └── planet_app.py
+├── Database/
+├── model/
+│   ├── planet_model.py
+│   └── model.pth
+├── python_embed/          # Embedded Python Environment (Portable)
+├── scans_archive/
+├── training/
+│   └── train.py
+├── Groq API Key.txt
+├── planet_model.py
+├── Plant Disease Detector.bat  # Main launcher script
+└── README.md
 
-If you don't have an account, you can quickly sign up using your Google or GitHub account, or by entering your email address.
+ ## ⚙️ How to Run (Plug & Play)
+Plug in your USB drive containing the project.
 
-Follow the simple instructions to complete the account creation and login process.
+Double-click the Plant Disease Detector batch file (.bat).
 
-Navigate to the key management section:
+The app will automatically clear old cache files, verify the embedded Python environment, and launch the Streamlit web app in your default browser at http://localhost:8501.
 
-After logging in and opening the console, look at the sidebar or main interface and find the option labeled "API Keys."
-
-Create a new key:
-
-Click the "Create API Key" button.
-
-You may be asked to name the key (e.g., "MyPythonApp" or any name you choose to identify it), then click confirm.
-
-Copy and save the key:
-
-The key will appear on the screen (it usually starts with "gsk_...").
-
-Very important note: Copy the key immediately and save it in a secure place (such as a text file), as the platform will not display the key again for security reasons once the creation window is closed.
+Developed with dedication by Robin John.
