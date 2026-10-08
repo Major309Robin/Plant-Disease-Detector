@@ -1,4 +1,4 @@
-###++++++++++++++++++++++++++++++++++++++++=========================== The Groq key powers the AI ​​system for the Q&A program ========================++++++++++++++++++++++++++++++++++++###
+The Groq key powers the AI ​​system for the Q&A program
 
 
 
