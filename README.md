@@ -68,7 +68,7 @@ plant-disease-detection/
 
 ---
 
-⚙️ How to Run
+## ⚙️ How to Run
 1. Open the extracted project folder.
 
 2. Double-click the application launcher (Plant Disease Detector.exe or batch file).
