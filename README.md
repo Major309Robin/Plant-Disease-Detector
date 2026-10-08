@@ -12,7 +12,7 @@ A deep learning project that detects plant type and disease from leaf images usi
 * Web app using Streamlit
 * Image preprocessing and augmentation
 * **Portable USB Architecture:** Runs via an embedded Python environment (`python_embed`) without requiring prior installation on host computers.
-* **Robust Execution:** Automated batch script automation (`Plant Disease Detector.exe`) to clear old cache files and enforce UTF-8 encoding.
+* **Robust Execution & Protection:** Automated batch and executable launcher to clear old cache files instantly and enforce forced UTF-8 encoding (`chcp 65001` & `PYTHONIOENCODING=utf-8`) to completely eliminate `Null Bytes` and environment errors.
 
 ---
 
@@ -52,4 +52,12 @@ Plant-Disease-Detector/
 ├── Groq API Key.txt
 ├── Plant Disease Detector.bat
 ├── Plant Disease Detector.exe  # Plug & Play Launcher
-└── README.txt
+└── README.md
+
+---
+
+## 📥 How to Download & Install
+
+1. Go to the repository and click on the `Releases` section on the right side of the page.
+2. Download the ready-to-use portable package `Plant.Disease.Detector.zip` from the latest release assets..
+3. Extract the ZIP file directly onto your USB flash drive or local machine.
