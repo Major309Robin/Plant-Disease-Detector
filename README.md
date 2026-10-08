@@ -57,3 +57,24 @@ plant-disease-detection/
 ├── requirements.txt
 ├── .gitignore
 └── README.md
+```
+---
+
+## 📥 Download & Install
+
+1. Go to the repository Releases section on GitHub.
+2. Download the portable package Plant.Disease.Detector.zip.
+3. Extract the ZIP file onto your computer or USB drive.
+
+---
+
+⚙️ How to Run
+1. Open the extracted project folder.
+
+2. Double-click the application launcher (Plant Disease Detector.exe or batch file).
+
+3. The app will launch automatically in your browser.
+
+---
+
+Developed with dedication by Robin John
