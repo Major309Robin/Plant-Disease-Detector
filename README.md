@@ -12,24 +12,24 @@ A comprehensive deep learning and AI-powered project that detects plant types an
 * **Plant Doctor AI Assistant (Groq API):** Interactive chatbot powered by Groq API (`openai/gpt-oss-20b`) that gives expert agricultural advice tailored to the scanned plant, weather, and diagnosis.
 * **SQLite Database & Archiving:** Automatically saves scans, high-resolution images (`scans_archive`), detailed text reports, and chat histories into a local SQLite database (`Database/plant_scans.db`).
 * **Analytics & Search Dashboard:** Filter past scans by status (Healthy/Diseased), search records by plant or disease name, export history as a CSV file for Excel, and view quick analytics/recent scans.
-* **Custom UI & Dark Mode:** Toggle between Dark and Light themes with custom CSS styling, upload helper guides, and report download/copy features[cite: 1].
+* **Custom UI & Dark Mode:** Toggle between Dark and Light themes with custom CSS styling, upload helper guides, and report download/copy features.
 
 ---
 
 ## 🧠 Model Architecture
 
-* **Backbone:** Pretrained ResNet18 model (with final classification layer adapted)[cite: 1].
-* **Feature Extraction Layer:** Fully connected layer mapping 512 features to 256 units[cite: 1].
+* **Backbone:** Pretrained ResNet18 model (with final classification layer adapted).
+* **Feature Extraction Layer:** Fully connected layer mapping 512 features to 256 units.
 * **Dual Output Heads:**
-  * **Plant Classification Head 🌱** (handles 14 plant types)[cite: 1]
-  * **Disease Classification Head 🦠** (handles 21 disease/health classes)[cite: 1]
+  * **Plant Classification Head 🌱** (handles 14 plant types)
+  * **Disease Classification Head 🦠** (handles 21 disease/health classes)
 
 ---
 
 ## 📂 Supported Categories
 
-* **Plants (14 types):** Apple, Blueberry, Cherry (including sour), Corn (maize), Grape, Orange, Peach, Pepper (bell), Potato, Raspberry, Soybean, Squash, Strawberry, and Tomato[cite: 1].
-* **Conditions & Diseases (21 classes):** Includes various blights, spots, rusts, mildews, viruses, and healthy classifications[cite: 1].
+* **Plants (14 types):** Apple, Blueberry, Cherry (including sour), Corn (maize), Grape, Orange, Peach, Pepper (bell), Potato, Raspberry, Soybean, Squash, Strawberry, and Tomato.
+* **Conditions & Diseases (21 classes):** Includes various blights, spots, rusts, mildews, viruses, and healthy classifications.
 
 ---
 
@@ -39,24 +39,24 @@ A comprehensive deep learning and AI-powered project that detects plant types an
 plant-disease-detection/
 │
 ├── app/
-│   └── planet_app.py        # Streamlit web application & UI
+│   └── planet_app.py             # Streamlit web application & UI
 │
 ├── model/
-│   ├── planet_model.py      # Model architecture definition
-│   └── model.pth            # Trained weights file
+│   ├── planet_model.py           # Model architecture definition
+│   └── model.pth                 # Trained weights file
 │
-├── Database/                # SQLite database folder (auto-created)
+├── Database/                     # SQLite database folder (auto-created)
 │   └── plant_scans.db
 │
-├── scans_archive/           # Saved scan images folder (auto-created)
+├── scans_archive/                # Saved scan images folder (auto-created)
 │
 ├── training/
-│   └── train.py             # Model training script
+│   └── train.py                  # Model training script
 │
-├── Groq API Key.txt         # Saved Groq API key storage
-├── requirements.txt
-├── .gitignore
-└── README.md
+├── Groq API Key.txt              # Saved Groq API key storage
+├── Plant Disease Detector.bat
+├── Plant Disease Detector.exe    # App Luncher
+└── README.txt
 ```
 ---
 
