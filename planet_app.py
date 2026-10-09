@@ -16,7 +16,7 @@ from torchvision import models, transforms
 # -------------------------
 # 📌 VERSION & GITHUB CONFIG
 # -------------------------
-CURRENT_VERSION = "3.0.0 beta"
+CURRENT_VERSION = "1.0.0"
 VERSION_URL = "https://raw.githubusercontent.com/Major309Robin/Plant-Disease-Detector/main/version.txt"
 CODE_URL = "https://raw.githubusercontent.com/Major309Robin/Plant-Disease-Detector/main/planet_app.py"
 
@@ -264,7 +264,7 @@ translations = {
         "up_to_date": "Up to date",
         "updating_msg": "📥 Downloading and applying update...",
         "update_success": (
-            "✅ Updated successfully! Please restart the application manually."
+            "✅ Updated successfully! Please restart the application."
         ),
         "download_fail": "Failed to download update file.",
     },
@@ -398,10 +398,18 @@ if st.session_state.check_clicked:
                             code_res = requests.get(CODE_URL, timeout=5)
                             if code_res.status_code == 200:
                                 current_file_path = os.path.abspath(__file__)
+                                raw_code = code_res.text
+                                cleaned_code = "\n".join(
+                                    [
+                                        line
+                                        for line in raw_code.splitlines()
+                                        if line.strip() != ""
+                                    ]
+                                )
                                 with open(
                                     current_file_path, "w", encoding="utf-8"
                                 ) as f:
-                                    f.write(code_res.text)
+                                    f.write(cleaned_code)
                                 st.success(t["update_success"])
                             else:
                                 st.error(t["download_fail"])
@@ -1120,3 +1128,4 @@ with tab2:
 
 st.markdown("---")
 st.markdown(t["footer"])
+st.markdown(صقغعهغغعغعخخغخعغخغعخغع)
