@@ -41,6 +41,8 @@ plant-disease-detection/
 ├── app/
 │   └── planet_app.py             # Streamlit web application & UI
 │
+├── python_embed/                    
+│   └── Files
 ├── model/
 │   ├── planet_model.py           # Model architecture definition
 │   └── model.pth                 # Trained weights file
