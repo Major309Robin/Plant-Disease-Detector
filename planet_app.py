@@ -1128,4 +1128,3 @@ with tab2:
 
 st.markdown("---")
 st.markdown(t["footer"])
-st.markdown(صقغعهغغعغعخخغخعغخغعخغع)
