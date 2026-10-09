@@ -1050,7 +1050,7 @@ with tab2:
             or search_query.lower() in report_s.lower()
         )
 
-        matches_status = title = True if status_filter == t["all"] else False
+        matches_status = True
         if status_filter == t["healthy"]:
             matches_status = status_s == "Healthy"
         elif status_filter == t["diseased"]:
