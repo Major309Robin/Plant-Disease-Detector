@@ -16,7 +16,7 @@ from torchvision import models, transforms
 # -------------------------
 # 📌 VERSION & GITHUB CONFIG
 # -------------------------
-CURRENT_VERSION = "3.0.0 beta"
+CURRENT_VERSION = "2.0.0 beta"
 VERSION_URL = "https://raw.githubusercontent.com/Major309Robin/Plant-Disease-Detector/main/version.txt"
 CODE_URL = "https://raw.githubusercontent.com/Major309Robin/Plant-Disease-Detector/main/planet_app.py"
 
@@ -1127,4 +1127,6 @@ with tab2:
         st.info(t["no_archive_files"])
 
 st.markdown("---")
+st.markdown(t["footer"])
+st.markdown(t["footer"])
 st.markdown(t["footer"])
