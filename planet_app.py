@@ -263,7 +263,9 @@ translations = {
         "dont_show_again": "Don't show this update again",
         "up_to_date": "Up to date",
         "updating_msg": "📥 Downloading and applying update...",
-        "update_success": "✅ Updated successfully! Restarting application...",
+        "update_success": (
+            "✅ Updated successfully! Please restart the application manually."
+        ),
         "download_fail": "Failed to download update file.",
     },
     "العربية": {
@@ -344,7 +346,9 @@ translations = {
         "dont_show_again": "Don't show this update again",
         "up_to_date": "Up to date",
         "updating_msg": "📥 جاري تحميل وتطبيق التحديث...",
-        "update_success": "✅ تم التحديث بنجاح! جاري إعادة تشغيل البرنامج...",
+        "update_success": (
+            "✅ تم التحديث بنجاح! يرجى إعادة تشغيل التطبيق يدوياً."
+        ),
         "download_fail": "فشل في تحميل ملف التحديث.",
     },
 }
@@ -399,9 +403,6 @@ if st.session_state.check_clicked:
                                 ) as f:
                                     f.write(code_res.text)
                                 st.success(t["update_success"])
-                                os.execl(
-                                    sys.executable, sys.executable, *sys.argv
-                                )
                             else:
                                 st.error(t["download_fail"])
                 with col_u2:
@@ -1079,9 +1080,9 @@ with tab2:
             ):
                 c1, c2 = st.columns([1, 2])
                 with c1:
-                    if os.path.exists(img_p):
+                    if os.path.exists(img_path := img_p):
                         st.image(
-                            img_p,
+                            img_path,
                             caption="Archived Leaf",
                             use_container_width=True,
                         )
