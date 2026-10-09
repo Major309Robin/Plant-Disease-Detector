@@ -54,7 +54,6 @@ plant-disease-detection/
 │   └── train.py                  # Model training script
 │
 ├── Groq API Key.txt              # Saved Groq API key storage
-├── Plant Disease Detector.bat
 ├── Plant Disease Detector.exe    # App Luncher
 └── README.txt
 ```
