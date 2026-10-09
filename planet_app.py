@@ -16,7 +16,7 @@ from torchvision import models, transforms
 # -------------------------
 # 📌 VERSION & GITHUB CONFIG
 # -------------------------
-CURRENT_VERSION = "2.0.0"
+CURRENT_VERSION = "3.0.0"
 VERSION_URL = "https://raw.githubusercontent.com/Major309Robin/Plant-Disease-Detector/main/version.txt"
 CODE_URL = "https://raw.githubusercontent.com/Major309Robin/Plant-Disease-Detector/main/planet_app.py"
 
